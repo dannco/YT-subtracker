@@ -1,6 +1,5 @@
 # YT-subtracker
 
-About
 
 This is a program to keep track of the change in subscribers for youtube channels.
 
