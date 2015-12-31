@@ -1,6 +1,7 @@
 # YT-subtracker
 
 About
+
 This is a program to keep track of the change in subscribers for youtube channels.
 Given a channel, the program will open up a URL-stream to the channel's "about"-page, where the subscriber 
 count is displayed. Using a regex pattern it will retrieve the number of subscribers for that channel at that
@@ -13,6 +14,7 @@ Gain/loss of subscribers is shown in overall change as well as rate per minute a
 
 
 Valid commands
+
 $ java SubTracker test <channel name> - dry run on the specified channel. Returns the amount of subscribers 
     for that channel and displays it in the console window, but it will not create any log-files, nor save 
     any data.
