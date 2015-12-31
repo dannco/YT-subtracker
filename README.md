@@ -18,10 +18,10 @@ Gain/loss of subscribers is shown in overall change as well as rate per minute a
 
 Valid commands
 
-$ java SubTracker test <channel name> - dry run on the specified channel. Returns the amount of subscribers 
+$ java SubTracker test \<channel name\> - dry run on the specified channel. Returns the amount of subscribers 
     for that channel and displays it in the console window, but it will not create any log-files, nor save 
     any data.
 
 $ java SubTracker $auto$ - checks every channel saved to a local text-file named "channels.txt"
 
-$ java SubTracker <channel_1> <channel_2> ... - check every channel given as parameter and saves the data.
+$ java SubTracker \<channel_1\> \<channel_2\> ... - check every channel given as parameter and saves the data.
