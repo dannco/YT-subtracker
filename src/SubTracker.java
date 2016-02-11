@@ -1,5 +1,3 @@
-package dako;
-
 import java.io.*;
 import java.net.URL;
 import java.text.*;
@@ -32,11 +30,6 @@ public class SubTracker {
             return;
         }
         
-        // setting up files for storing data for future runs.
-        
-        // auto check file
-        File channelFile = new File("channels.txt");
-        if (!channelFile.exists()) channelFile.createNewFile();
         // directory of saved data
         File dir = new File("channels");
         if (!dir.exists()) dir.mkdir(); // create directory where data over checked channels are saved.
@@ -50,11 +43,10 @@ public class SubTracker {
             e.printStackTrace();
         }
 
-        // check every channel written down in local file "channels.txt"
-        if (args[0].equals("$auto$")) { 
+        if (args[0].equals("-f")) {
             String s = "";
             try {
-                Scanner in = new Scanner(channelFile);
+                Scanner in = new Scanner(new File(args[1]));
                 while (in.hasNextLine()) {
                     s += in.nextLine()+" ";
                 }
